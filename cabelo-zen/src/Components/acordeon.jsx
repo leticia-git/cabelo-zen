@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Image from "next/image";
 import Terapia from '../img/terapia-capilar.jpg';
 import Vapor from '../img/vapor.png';
-import Aroma from '../img/Aroma.png';
+import Aroma from '../img/aroma.png';
 import Frequencia from '../img/frequencia.png';
 import Micro from '../img/micro.png';
 import Laser from '../img/laser.png';
