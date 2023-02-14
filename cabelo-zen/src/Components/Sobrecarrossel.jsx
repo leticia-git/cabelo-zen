@@ -2,8 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 import Image from "next/image";
-import carrosselum from '../img/carrossel-um.png';
-import carrosseldois from '../img/carrossel-dois.png';
+import Espacoum from '../img/espaco-um.jpg';
+import Espacodois from '../img/espaco-dois.jpg';
+import Espacotres from '../img/espaco-tres.jpg';
+import Espacoquatro from '../img/espaco-quatro.jpg';
+
 import carrosseltres from '../img/carrossel-tres.png';
 
 // import "slick-carousel/slick/slick.css";
@@ -63,13 +66,16 @@ const Responsive = () => {
             <div className="grid-slider">
             <Slider {...settings}>
                 <div className="carrossel sobrec">
-                    <Image src={carrosselum} alt='CabeloZen'/>                     
+                    <Image src={Espacoum} alt='CabeloZen'/>                     
                     </div>
                 <div className="carrossel sobrec">
-                    <Image src={carrosseldois} alt='CabeloZen'/>           
+                    <Image src={Espacodois} alt='CabeloZen'/>           
                 </div>
                 <div className="carrossel sobrec">
-                    <Image src={carrosseltres} alt='CabeloZen'/>           
+                    <Image src={Espacotres} alt='CabeloZen'/>           
+                </div>
+                <div className="carrossel sobrec">
+                    <Image src={Espacoquatro} alt='CabeloZen'/>           
                 </div>
             </Slider>
             </div>
