@@ -627,3 +627,15 @@ ul{
     margin-top: 150px;
     margin-left: 50px;
 }
+.dg-grid-blog{
+  width: 1200px;
+  margin: 0 auto;
+}
+.posts{
+  margin: 10px 10px;
+  
+}
+.posts a {
+  color: #000;
+  font-size: 26px;
+}

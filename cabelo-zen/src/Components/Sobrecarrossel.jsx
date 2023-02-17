@@ -7,8 +7,6 @@ import Espacodois from '../img/espaco-dois.jpg';
 import Espacotres from '../img/espaco-tres.jpg';
 import Espacoquatro from '../img/espaco-quatro.jpg';
 
-import carrosseltres from '../img/carrossel-tres.png';
-
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
