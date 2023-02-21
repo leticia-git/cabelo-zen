@@ -17,7 +17,7 @@ export default function SimpleAccordion() {
     return (
         <div>
             <h2>Serviços Oferecidos</h2>
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <Accordion expanded={true}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
