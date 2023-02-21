@@ -2,15 +2,23 @@ import Link from "next/link";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Image from "next/image";
+import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 
-export default function Blog( {posts}: { posts: any}){
+type Blog = {
+
+};
+export default function Blog( {posts}: { posts: any,post:any } ){
   return (
+    
     <div >
     <Header/>
     <div className="dg-grid-blog">
     {
-      posts.nodes.map(post => {
+      
+      posts.nodes.map((post: { slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }) => {
+       
         return(
+          
           <div key={post.slug} className="posts">
             <div>
               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
