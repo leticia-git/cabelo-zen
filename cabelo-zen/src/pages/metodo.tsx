@@ -3,6 +3,8 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Image from 'next/image'
 import metodo from '../img/metodo.png';
+import Comentarios from "../Components/Comentarios";
+
 export default function Metodo() {
   return (
     <>
@@ -67,6 +69,8 @@ export default function Metodo() {
             <div className="img-metodo"><Image src={metodo} alt='CabeloZen'/></div>
           </div>
         </div>
+        <Comentarios/>
+
         <Footer />
       </div>
     </>
