@@ -3,8 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Image from "next/image";
 
-export default function Blog( {posts}: { posts: string} ){
-    
+export default function Blog( {posts}: { posts: any}){
   return (
     <div >
     <Header/>
