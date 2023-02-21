@@ -2,13 +2,24 @@
 html{
   overflow-x: hidden;
 }
+.container {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+body {
+  margin: 0px;
+}
 .grid-metodo {
   width: 1200px;
   margin: 0 auto;}
-.grid-slider {
+.grid-comentarios {
   width: 1200px;
   margin: 0 auto;}
-
+.dg-grid-posts{
+  width: 1200px;
+  margin: 0 auto;
+}
 .grid {
   width: 1200px;
   margin: 0 auto;
@@ -32,9 +43,7 @@ html{
   margin: 0 auto;
   overflow: hidden;
 }
-.slick-slide {
-  margin: 10px;
-}
+
 .slick-slide img {
   width: 100%;
   border: 2px solid #fff;
@@ -110,7 +119,7 @@ html{
     height: 100%;
 }
 .conteudo {
-  margin-top: 70px;
+  margin-top: 180px;
 }
 .conteudo p {
   font-family: Poppins;
@@ -150,7 +159,7 @@ body {
 }
 .texto {
   width: 50%;
-  margin: 50px 0;
+
 }
 .texto p {
   font-size: 18px;
@@ -222,9 +231,7 @@ list-style-position: inside;
    width: 80%;
    margin: 0 auto;
 }
-.conteudosobre  {
-   margin: 0 10px;
-}
+
 .sobrec{
    margin-top: 50px;
 }
@@ -549,13 +556,6 @@ border-bottom: 1px solid #606d01
     .avalicaocontent {
       display: flex;
     }
-    .texto-ava {
-      width: 70%;
-    }
-    .formulario img {
-      padding: 20px;
-      margin-top: 45px;
-    }
     .texto-ava{
       width: 100%;
     }
@@ -620,13 +620,7 @@ ul{
   .avalicaocontent{
     display: flex;
 }
-.texto-ava {
-    width: 70%;
-}
-.formulario img {
-    margin-top: 150px;
-    margin-left: 50px;
-}
+
 .dg-grid-blog{
   width: 1200px;
   margin: 0 auto;
@@ -639,3 +633,80 @@ ul{
   color: #000;
   font-size: 26px;
 }
+.links li::marker {
+  list-style-type: none;
+}
+.links a{
+  font-size: 18px;
+  font-weight: semi-bold;
+  margin: 0 25px;
+  color: #061500;
+}
+
+.container {
+  background: rgba(255,255,255,0.25)
+}
+.top-menu ul{
+  margin-top: 0px;
+}
+.links a:hover{
+  background: #9EB100;
+  color: #fff!important;
+}
+.links a{
+  padding: 5px;
+}
+.jacy img {
+  margin-top: 25px;
+}
+main > div > .sobre {
+  background-color: #edffe5;
+      padding-top: 20px;
+}
+.grid-slider .slick-prev {
+  margin-left: 100px;
+  
+}
+.grid-slider .slick-next {
+  margin-right: 120px;
+  
+}
+.avaliacao {
+  background-color: #fff;
+  padding-bottom: 50px;
+  
+}
+.formulario  {
+  margin-top: 35px;
+}
+.formulario a {
+  color: #ffff;
+  background: #9EB100;
+  text-decoration: none;
+  font-weight: semi-condensed;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 250px;
+    border-radius: 10px;
+}
+
+.comentario img{
+  width: 100px;
+}
+.nome {
+  font-weight: bold;
+  font-size: 18px;
+}
+.comentario {
+  background: #CDDABC;
+  margin: 50px 10px;
+  width: 80%!important;
+  border-radius: 10px;
+  padding: 20px;
+}
+.comentario img {
+  border: none
+}
+.grid-comentarios .slick-dots {
+  bottom: 0px!important;
+  }

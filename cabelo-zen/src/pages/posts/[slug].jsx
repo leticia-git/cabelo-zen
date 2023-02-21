@@ -1,13 +1,20 @@
-import Image from 'next/image'
+import Header from "../../Components/Header"
+import Footer from "../../Components/Footer"
+
 
 export default function Post( data ){
 
     const post = data.post;
 
     return (
+
         <div>
+            <Header/>
+            <div className="dg-grid-posts">
             <h1>{post.title}</h1>
             <article dangerouslySetInnerHTML={{__html: post.content}}></article>
+            </div>
+            <Footer/>
         </div>
     )
 

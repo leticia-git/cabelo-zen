@@ -5,6 +5,8 @@ import styles from '@/styles/Home.module.css'
 import Header from '../Components/Header'
 import Tricologista from '../Components/Tricologista'
 import Footer from '../Components/Footer'
+import Sobre from '../Components/Sobre'
+import Comentarios from '../Components/Comentarios'
 import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
@@ -20,6 +22,9 @@ export default function Home() {
       <div>
       <Header />
       <Tricologista/>
+      <Sobre/>
+
+      <Comentarios/>
       </div>
       </main>
       <Footer/>

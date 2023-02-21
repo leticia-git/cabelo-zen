@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Image from "next/image";
 
-export default function Blog( {posts} ){
+export default function Blog( {posts}: { posts: string} ){
     
   return (
     <div >
@@ -25,6 +25,7 @@ export default function Blog( {posts} ){
        <Footer/>
   </div>
   );
+  
 }
 
 export async function getStaticProps(){

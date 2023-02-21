@@ -25,11 +25,11 @@ const Menu = () => {
                     <i id="selector" className="icon material-icons" onClick={showLinks}><DehazeIcon /></i>
                 </div>
                 <ul className="links hidden">
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/metodo">Método</Link></li>
-                    <li><Link href="/sobre">Sobre nós</Link></li>
-                    <li><Link href="/servicos">Serviços</Link></li>
-                    <li><Link href="/blog">Blog</Link></li>
+                    <Link href="/">Home</Link>
+                    <Link href="/metodo">Método</Link>
+                    <Link href="/servicos">Serviços</Link>
+                    <Link href="/servicos">Resultados</Link>
+                    <Link href="/blog">Blog</Link>
                 </ul>
             </div>
         </div>

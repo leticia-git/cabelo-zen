@@ -10,12 +10,14 @@ import carrosseltres from '../img/carrossel-tres.png';
 
 const Responsive = () => {
     const settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
+        dots: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 6000,
         responsive: [
             {
               breakpoint: 768,
