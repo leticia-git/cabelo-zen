@@ -78,7 +78,6 @@ body {
   position: absolute;
   text-align: center;
   width: 100%;
-  margin-top: 40px;
 }
 .conteudo h3 {
   color: #061500;
@@ -119,7 +118,7 @@ body {
     height: 100%;
 }
 .conteudo {
-  margin-top: 180px;
+  margin-top: 100px;
 }
 .conteudo p {
   font-family: Poppins;
@@ -228,7 +227,7 @@ list-style-position: inside;
 }
 .sobrec img {
   border-radius: 50px; 
-   width: 80%;
+   width: 50%;
    margin: 0 auto;
 }
 
@@ -710,3 +709,10 @@ main > div > .sobre {
 .grid-comentarios .slick-dots {
   bottom: 0px!important;
   }
+  .video{
+    display: flex !important;
+    justify-content: center;
+}
+.video-slider{
+  padding: 25px
+}
