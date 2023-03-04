@@ -66,7 +66,9 @@ export default function Metodo() {
                 </ul>
               </div>
             </div>
-            <div className="img-metodo"><Image src={metodo} alt='CabeloZen'/></div>
+            <div className="img-metodo">
+              <Image src={metodo} alt='CabeloZen'/>
+            </div>
           </div>
         </div>
         <Comentarios/>

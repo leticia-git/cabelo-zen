@@ -16,7 +16,7 @@ const Responsive = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        autoplay: true,
+        autoplay: false,
         arrows:false,
         autoplaySpeed:2000,
         responsive: [

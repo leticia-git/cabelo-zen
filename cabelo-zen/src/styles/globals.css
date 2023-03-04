@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-html{
+/* html{
   overflow-x: hidden;
-}
+} */
 .container {
   position: absolute;
   z-index: 999;
@@ -21,6 +21,13 @@ body {
   margin: 0 auto;
 }
 .grid {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.grid-trico {
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -512,12 +519,9 @@ border-bottom: 1px solid #606d01
   .slick-dots {
      bottom:22px;
   }
-  .grid-slider{
-      width: 500px;
-      
-  }
+ 
   .carrossel img {
-      height: 270px;
+      height: 250px;
   }
   .conteudo p{
       padding: 5px;
@@ -569,7 +573,7 @@ border-bottom: 1px solid #606d01
     }
     .servicos > div {
       max-width: 100%!important;
-          width: 40%;
+          width: 100%;
       padding-left: 10px;
   }
   .acordeon-item{
@@ -715,4 +719,93 @@ main > div > .sobre {
 }
 .video-slider{
   padding: 25px
+}
+
+@media(max-width:991px){
+  .container{
+      position: static!important;
+  }
+  .conteudo h3 {
+      font-size: 14px;
+  }
+  .conteudo p {
+      font-size: 12px;
+  }
+  .botao-carrossel a {
+      font-size: 12px;
+  }
+  .carrossel img {
+      width: 100%;
+  }
+}
+@media(max-width:991px){
+  .grid-comentarios{
+  width: 100%!important;
+}
+.grid-metodo{
+width: 100%!important;  
+}
+.grid-trico{
+   width: 90%!important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-direction: column;
+}
+  .grid-trico .texto{
+      padding: 0px!important;
+  }
+  .conteudosobre {
+      padding: 0 20px;
+  }
+  .sobrec .slick-next:before, .slick-prev:before{
+      display: none;
+  }
+  .grid-slider .slick-next {
+               display: none!important;
+  }
+  .grid-slider {
+      padding: 20px;
+  }
+  .grid-slider .slick-dots {
+      position: static!important;
+      margin-top: -20px;
+  }
+  .comentario{
+    margin-left: 15px;
+    }
+    .img-metodo img {
+      width: 80%;
+      height: 80%;
+  }
+  
+  .lista ul{
+      padding: 0px;
+  }
+  .conteudo-metodo{
+        padding: 0 20px;  
+  }
+  
+  .grid-header .grid-slider{
+      padding: 0px
+  }
+  .ometodo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-servicos img{
+    width: 95%;
+    height:  95%;
+}
+.servicos{
+    width: 95%;
+}
+.resultados .slick-dots{
+  margin: 0px!important;
+}
+.dg-grid-blog{
+  width: 100%;
+}
 }

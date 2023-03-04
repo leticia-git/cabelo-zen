@@ -6,7 +6,7 @@ import Jacy from '../img/jacy.png'
 
 function Tricologista() {
     return (
-        <div className="grid">
+        <div className="grid-trico">
             <div className="texto">
                 <h2>A tricologista</h2>
                 <p>Olá, eu sou a Jaci e estou passando aqui para apresentar um pouquinho sobre mim e falar também do método que eu densenvolvi que é o Cabelo Zen.</p>
