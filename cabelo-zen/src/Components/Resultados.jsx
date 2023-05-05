@@ -58,12 +58,15 @@ const Responsive = () => {
             />
             <div className="grid-slider video-slider">
             <Slider {...settings}>
+
                 <div className="carrossel video">
-                    <iframe width={410} height={440} src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-um.mp4" frameborder="0"></iframe>                   
-                    </div>
-                <div className="carrossel video">
-                <iframe width={410} height={440} src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-dois.mp4" frameborder="0"></iframe>                   
+                    <iframe src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-um.mp4" frameborder="0"></iframe>                   
                 </div>
+
+                <div className="carrossel video">
+                <iframe  src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-dois.mp4" frameborder="0"></iframe>                   
+                </div>
+
             </Slider>
             </div>
         </div>
