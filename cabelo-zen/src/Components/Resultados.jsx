@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 import Image from "next/image";
+import ReactPlayer from 'react-player'
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -59,15 +60,11 @@ const Responsive = () => {
             <div className="grid-slider video-slider">
             <Slider {...settings}>
                 <div className="carrossel video">
-                <video autoPlay loop style={{ width: '500px', height: '500px' }}>
-                    <source src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-um.mp4" />
-                </video>
+                <ReactPlayer url='http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-um.mp4' />
                 </div>
 
                 <div className="carrossel video">
-                <video autoPlay loop style={{ width: '500px', height: '500px' }}>
-                    <source src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-dois.mp4" />
-                </video>                
+                <ReactPlayer url='http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-dois.mp4' />
                 </div>
                 
             </Slider>
