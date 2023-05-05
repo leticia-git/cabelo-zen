@@ -59,11 +59,15 @@ const Responsive = () => {
             <div className="grid-slider video-slider">
             <Slider {...settings}>
                 <div className="carrossel video">
-                <iframe src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-um.mp4" height="200" width="300" title="Iframe Example"></iframe>                  
+                <video autoPlay loop style={{ width: '500px', height: '500px' }}>
+                    <source src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-um.mp4" />
+                </video>
                 </div>
 
                 <div className="carrossel video">
-                <iframe width={410} height={600} src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-dois.mp4" frameborder="0"></iframe>                   
+                <video autoPlay loop style={{ width: '500px', height: '500px' }}>
+                    <source src="http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-dois.mp4" />
+                </video>                
                 </div>
                 
             </Slider>
