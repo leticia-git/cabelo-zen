@@ -13,11 +13,11 @@ import Micro from '../img/micro.png';
 import Laser from '../img/laser.png';
 import Massagem from '../img/massagem.png';
 
-export default function SimpleAccordion() {
+export default function SimpleAccordionMobile() {
     return (
-        <div className='desktopserv'>
+        <div className='mobileserv'>
             <h2>Serviços Oferecidos</h2>
-            <Accordion expanded={true}>
+            <Accordion  >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
@@ -47,7 +47,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={true}>
+            <Accordion  >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2a-content"
@@ -75,7 +75,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={true}>
+            <Accordion  >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel3a-content"
@@ -103,7 +103,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={true}>
+            <Accordion  >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel4a-content"
@@ -138,7 +138,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={true}>
+            <Accordion  >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel5a-content"
@@ -172,7 +172,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={true}>
+            <Accordion  >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel6a-content"
@@ -204,7 +204,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={true}>
+            <Accordion  >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel7a-content"

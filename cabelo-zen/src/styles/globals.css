@@ -809,3 +809,16 @@ width: 100%!important;
   width: 100%;
 }
 }
+.img-servicos img{
+  margin-left: 25px;
+}
+@media(max-width:991px){
+  .desktopserv{
+    display: none;
+  }
+}
+@media(min-width:991px){
+  .mobileserv{
+    display: none;
+  }
+}
