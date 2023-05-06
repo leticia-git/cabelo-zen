@@ -61,11 +61,11 @@ const Responsive = () => {
             <Slider {...settings}>
 
                 <div className="carrossel video" >
-                <ReactPlayer url='https://www.youtube.com/shorts/LVSiu3kC_hI?controls=1' width={275} height={500} />
+                <ReactPlayer url='https://www.youtube.com/shorts/LVSiu3kC_hI?controls=1' width={271} height={500} />
                 </div>
 
                 <div className="carrossel video">
-                <ReactPlayer url='https://www.youtube.com/shorts/kq3FFMNaT0U?controls=1' width={275} height={500} />
+                <ReactPlayer url='https://www.youtube.com/shorts/kq3FFMNaT0U?controls=1' width={271} height={500} />
                 </div>
                 
             </Slider>
