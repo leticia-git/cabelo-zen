@@ -60,7 +60,7 @@ const Responsive = () => {
             <div className="grid-slider video-slider">
             <Slider {...settings}>
                 <div className="carrossel video">
-                <ReactPlayer url='http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-um.mp4' />
+                <ReactPlayer url='https://youtube.com/shorts/LVSiu3kC_hI?feature=share' />
                 </div>
 
                 <div className="carrossel video">
