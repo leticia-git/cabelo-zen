@@ -59,6 +59,7 @@ const Responsive = () => {
             />
             <div className="grid-slider video-slider">
             <Slider {...settings}>
+                
                 <div className="carrossel video">
                 <ReactPlayer url='https://www.youtube.com/shorts/LVSiu3kC_hI' />
                 </div>
