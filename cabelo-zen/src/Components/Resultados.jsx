@@ -58,11 +58,10 @@ const Responsive = () => {
             <div className="grid-slider video-slider">
             <Slider {...settings}>
                 <div className="carrossel video">
-                <div style="width:100%;height:0px;position:relative;padding-bottom:177.778%;"><iframe src="https://streamable.com/e/gcj1i6?nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
-                </div>
+               <iframe src="https://streamable.com/e/gcj1i6?nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>                </div>
 
                 <div className="carrossel video">
-         <div style="width:100%;height:0px;position:relative;padding-bottom:177.778%;"><iframe src="https://streamable.com/e/gcj1i6?nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+                    <iframe src="https://streamable.com/e/gcj1i6?nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                 </div>
                 
             </Slider>
