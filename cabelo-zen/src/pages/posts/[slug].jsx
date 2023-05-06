@@ -11,8 +11,13 @@ export default function Post( data ){
         <div>
             <Header/>
             <div className="dg-grid-posts">
-            <h1>{post.title}</h1>
+          <div className="content-post">
+          <h1>{post.title}</h1>
             <article dangerouslySetInnerHTML={{__html: post.content}}></article>
+          </div>
+          <div className="img-post">
+         <img src={featuredImage} alt="" />
+          </div>
             </div>
             <Footer/>
         </div>
