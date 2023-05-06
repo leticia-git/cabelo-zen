@@ -1,7 +1,7 @@
 import Header from "../../Components/Header"
 import Footer from "../../Components/Footer"
-
-
+import Image from "next/image";
+import React from "react";
 export default function Post( data ){
 
     const post = data.post;
@@ -16,7 +16,7 @@ export default function Post( data ){
             <article dangerouslySetInnerHTML={{__html: post.content}}></article>
           </div>
           <div className="img-post">
-         <img src={featuredImage} alt="" />
+       
           </div>
             </div>
             <Footer/>

@@ -16,15 +16,34 @@ export default function Blog( {posts}: { posts: any,post:any } ){
     <div className="dg-grid-blog">
     {
       
-      posts.nodes.map((post: { slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }) => {
+      posts.nodes.map((post: {
+        featuredImage: any; slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; 
+}) => {
        
         return(
           
+          <div className="blog">
           <div key={post.slug} className="posts">
             <div>
               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-                <p> {post.excerpt}</p> 
+              <div 
+                className="text-base text-grey-darker"
+                dangerouslySetInnerHTML={{__html: post.excerpt}}>
+              </div>
+                <div className="botao-blog">
+                <Link href={`/posts/${post.slug}`}>Ler post</Link>
+                </div>
             </div>
+            <div>
+                <img
+              className="w-full"
+              src={post.featuredImage?.node.sourceUrl}
+              />
+            </div>
+          </div>
+          <div className="sidebar">
+
+          </div>
           </div>
         )
       })
@@ -50,7 +69,13 @@ export async function getStaticProps(){
                 nodes {
                   slug
                   title
-                    excerpt
+                  excerpt
+                  content
+                    featuredImage {
+                        node {
+                            sourceUrl
+                        }
+                    }
                 }
               }
             }
@@ -68,4 +93,3 @@ export async function getStaticProps(){
     }
   
   }
-  
