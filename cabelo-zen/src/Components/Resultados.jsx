@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Slider from "react-slick";
-import Image from "next/image";
-import ReactPlayer from 'react-player'
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -64,7 +62,7 @@ const Responsive = () => {
                 </div>
 
                 <div className="carrossel video">
-                <div style="width:100%;height:0px;position:relative;padding-bottom:177.778%;"><iframe src="https://streamable.com/e/gcj1i6?nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+         <div style="width:100%;height:0px;position:relative;padding-bottom:177.778%;"><iframe src="https://streamable.com/e/gcj1i6?nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
                 </div>
                 
             </Slider>
