@@ -60,11 +60,11 @@ const Responsive = () => {
             <div className="grid-slider video-slider">
             <Slider {...settings}>
                 <div className="carrossel video">
-                <ReactPlayer url='https://streamable.com/e/gcj1i6?nocontrols=1' />
+                <ReactPlayer url='http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-um.mp4' />
                 </div>
 
                 <div className="carrossel video">
-                <ReactPlayer url='https://streamable.com/e/gcj1i6?nocontrols=1' />
+                <ReactPlayer url='http://wordpress.cabelozen.com.br/wp-content/uploads/2023/02/resultado-dois.mp4' />
                 </div>
                 
             </Slider>
