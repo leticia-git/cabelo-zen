@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import Comentarios from "../Components/Comentarios";
 import Image from "next/image";
 import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 
@@ -14,11 +15,13 @@ export default function Blog( {posts}: { posts: any,post:any } ){
     <Header/>
     <div className="dg-grid-blog">
     {
-      
-      posts.nodes.map((post: { slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }) => {
+      posts.nodes.map((post: {
+        featuredImage: any; slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; 
+}) => {
        
         return(
           
+          <div className="blog">
           <div key={post.slug} className="posts">
             <div>
               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
@@ -26,9 +29,9 @@ export default function Blog( {posts}: { posts: any,post:any } ){
                 className="text-base text-grey-darker"
                 dangerouslySetInnerHTML={{__html: post.excerpt}}>
               </div>
-              <div className="botao-blog">
-                <Link href={`/posts/${post.slug}`}>Ler post</Link>
-              </div>
+                <div className="botao-blog">
+                <Link href={`/posts/${post.slug}`}>Leia mais</Link>
+                </div>
             </div>
             <div>
                 <img
@@ -36,6 +39,10 @@ export default function Blog( {posts}: { posts: any,post:any } ){
               src={post.featuredImage?.node.sourceUrl}
               />
             </div>
+          </div>
+          <div className="sidebar">
+
+          </div>
           </div>
         )
       })
@@ -61,7 +68,13 @@ export async function getStaticProps(){
                 nodes {
                   slug
                   title
-                    excerpt
+                  excerpt
+                  content
+                    featuredImage {
+                        node {
+                            sourceUrl
+                        }
+                    }
                 }
               }
             }
