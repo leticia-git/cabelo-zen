@@ -16,7 +16,7 @@ export default function Blog( {posts}: { posts: any,post:any } ){
     <div className="dg-grid-blog">
     {
       posts.nodes.map((post: {
-        featuredImage: any; slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; 
+        featuredImage: any; slug: Key | null | undefined | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; 
 }) => {
        
         return(
