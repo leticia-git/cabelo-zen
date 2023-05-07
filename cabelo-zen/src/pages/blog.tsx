@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import Comentarios from "../Components/Comentarios";
 import Image from "next/image";
 import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 
@@ -49,6 +50,7 @@ export default function Blog( {posts}: { posts: any,post:any } ){
       })
     }
     </div>
+    <Comentarios/>
        <Footer/>
   </div>
   );
