@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import Comentarios from "../Components/Comentarios";
 import Image from "next/image";
 import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 
@@ -15,12 +14,14 @@ export default function Blog( {posts}: { posts: any,post:any } ){
     <Header/>
     <div className="dg-grid-blog">
     {
+      
       posts.nodes.map((post: {
-        featuredImage: any; slug: Key | null | undefined | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; 
+        [x: string]: any; slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; 
 }) => {
        
         return(
           
+   
           <div className="blog">
           <div key={post.slug} className="posts">
             <div>
@@ -30,7 +31,7 @@ export default function Blog( {posts}: { posts: any,post:any } ){
                 dangerouslySetInnerHTML={{__html: post.excerpt}}>
               </div>
                 <div className="botao-blog">
-                <Link href={`/posts/${post.slug}`}>Leia mais</Link>
+                <Link href={`/posts/${post.slug}`}>Ler post</Link>
                 </div>
             </div>
             <div>
@@ -48,7 +49,6 @@ export default function Blog( {posts}: { posts: any,post:any } ){
       })
     }
     </div>
-    <Comentarios/>
        <Footer/>
   </div>
   );
@@ -68,13 +68,7 @@ export async function getStaticProps(){
                 nodes {
                   slug
                   title
-                  excerpt
-                  content
-                    featuredImage {
-                        node {
-                            sourceUrl
-                        }
-                    }
+                    excerpt
                 }
               }
             }
@@ -92,3 +86,4 @@ export async function getStaticProps(){
     }
   
   }
+  
