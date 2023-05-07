@@ -27,10 +27,7 @@ export default function Blog( {posts}: { posts: any,post:any } ){
           <div key={post.slug} className="posts">
             <div>
               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-              <div 
-                className="text-base text-grey-darker"
-                dangerouslySetInnerHTML={{__html: post.excerpt}}>
-              </div>
+             <div className="">{post.excerpt}</div>
                 <div className="botao-blog">
                 <Link href={`/posts/${post.slug}`}>Ler post</Link>
                 </div>
