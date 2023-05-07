@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import Comentarios from "../Components/Comentarios";
-import Image from "next/image";
 import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 
 type Blog = {
@@ -16,40 +14,20 @@ export default function Blog( {posts}: { posts: any,post:any } ){
     <div className="dg-grid-blog">
     {
       
-      posts.nodes.map((post: {
-        featuredImage: any; slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; 
-}) => {
+      posts.nodes.map((post: { slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }) => {
        
         return(
           
-          <div className="blog">
           <div key={post.slug} className="posts">
             <div>
               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-              <div 
-                className="text-base text-grey-darker"
-                dangerouslySetInnerHTML={{__html: post.excerpt}}>
-              </div>
-                <div className="botao-blog">
-                <Link href={`/posts/${post.slug}`}>Ler post</Link>
-                </div>
+                <p> {post.excerpt}</p> 
             </div>
-            <div>
-                <img
-              className="w-full"
-              src={post.featuredImage?.node.sourceUrl}
-              />
-            </div>
-          </div>
-          <div className="sidebar">
-
-          </div>
           </div>
         )
       })
     }
     </div>
-    <Comentarios/>
        <Footer/>
   </div>
   );
@@ -69,13 +47,7 @@ export async function getStaticProps(){
                 nodes {
                   slug
                   title
-                  excerpt
-                  content
-                    featuredImage {
-                        node {
-                            sourceUrl
-                        }
-                    }
+                    excerpt
                 }
               }
             }
@@ -93,3 +65,4 @@ export async function getStaticProps(){
     }
   
   }
+  
