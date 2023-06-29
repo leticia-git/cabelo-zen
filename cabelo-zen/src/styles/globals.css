@@ -843,3 +843,10 @@ width: 100%!important;
  font-weight: 400;
   border-radius: 5px;
 }
+
+.comentario {
+  height: 500px;
+}
+.grid-comentarios{
+    padding: 40px 0;
+}

@@ -6,6 +6,10 @@ import um from '../img/comentarioum.png';
 import dois from '../img/comentariodois.png';
 import tres from '../img/comentariotres.png';
 import quatro from '../img/comentarioquatro.png';
+import cinco from '../img/comentariocinco.png';
+import seis from '../img/comentarioseis.png';
+import sete from '../img/comentariosete.png';
+import oito from '../img/comentariooito.png';
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -86,7 +90,34 @@ const Responsive = () => {
                     <p className="nome">Terezinha</p>     
                     <p>
                     Conheci o espaço zen por indicação de uma amiga , fechei um pacote de 10 sessões, meu cabelo caia muito e eu já havia buscado diversos tratamentos sem resultados ,  já na terceira sessão com Jaci a queda foi interrompida e através  dos estímulos provocados pelos laseres o cabelo voltou a nascer e crescer muito rápido , além de incluir uma maravilhosa aula de yoga a cada sessão  , fiquei encantada com o resultado e super indico , excelente profissional                        </p>     
-   
+                </div>
+                <div className="comentario ">
+                    <Image src={cinco} alt='CabeloZen'/>  
+                    <p className="nome">Joyce</p>     
+                    <p>
+                    Cheguei ao espaço sem saber exatamente o que esperar. Estava com falhas visíveis e bastante preocupada… Encontrei acolhimento, uma análise profunda dos motivos que levaram à queda e enfraquecimento do meu cabelo. O tratamento foi incrível, quase uma terapia. O aspecto do meu cabelo mudou muito, assim como a quantidade!</p>     
+                </div>
+                <div className="comentario ">
+                    <Image src={seis} alt='CabeloZen'/>  
+                    <p className="nome">Iasmin</p>     
+                    <p>
+                    Eu eu tive muita queda de cabelo pós COVID e como trabalho com o público em geral a minha aparência é praticamente o meu cartão de visita, por isso me consultei com a jaci que foi super atenciosa desde a avaliação. Comecei o tratamento capilar e amei, além das aulas de yoga maravilhosas! Quando terminei o tratamento notei que os buracos que tinham no meu cabelo não tinham mais, além de ver nascer muitos fiozinhos novos! Hoje meu cabelo voltou 100% ao que era antes! Super recomendo o tratamento!                    </p>     
+                </div>
+                <div className="comentario ">
+                    <Image src={sete} alt='CabeloZen'/>  
+                    <p className="nome">Mariana</p>     
+                    <p>
+                    A Jaci é única. Ela entende profundamente do que faz, literalmente desde a raiz, e sabe transmitir todo seu conhecimento. Nossas sessões de tratamento sempre foram muito agradáveis e divertidas e ser sua cliente é uma honra e um prazer.
+                    </p>
+                </div>
+                <div className="comentario ">
+                    <Image src={oito} alt='CabeloZen'/>  
+                    <p className="nome">Natália</p>     
+                    <p>
+                    Jaciii, estou muito muito muito feliz! Comecei a ver muitos fiozinhos novos crescendo a partir da 3 sessão do tratamento. Incrível como meu couro cabeludo já está mais cheio e saudável          
+</p>
+
+<p>Tô muito muito feliz com o resultado!!!</p>
                 </div>
             </Slider>
             </div>
