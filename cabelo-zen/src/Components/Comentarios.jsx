@@ -66,25 +66,26 @@ const Responsive = () => {
             <Slider {...settings}>
                 <div className="comentario ">
                     <Image src={um} alt='CabeloZen'/>     
-                    <p className="nome">What is Lorem Ipsum?</p>         
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>     
-                    </div>
+                    <p className="nome">Denis Lea</p>         
+                    Gentee!!! Cabelo Zen existe. Depois de muito procurar encontrei um tratamento para queda que realmente deu certo,  em poucos meses o resultado foi visível,  passei por dois episódios de covid e com o tratamento não houve nenhuma queda. Continuo com a manutenção,  pois além de melhorar minha autoestima,  o cuidado da profissional com o lado emocional é sem igual. Super recomendo.                    </div>
                 <div className="comentario ">
                     <Image src={dois} alt='CabeloZen'/>     
-                    <p className="nome">What is Lorem Ipsum?</p>     
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>     
-
+                    <p className="nome">Hildite</p>     
+                    <p>Faço tratamento capilar com a Jaci e recomendo pela excelência do atendimento e o resultado. Além do conhecimento, há profissionalismo, seriedade em um ambiente limpo, bonito e acolhedor.
+                Muito feliz com o resultado do meu tratamento. A Jaci é simplesmente excelente!</p>     
                 </div>
                 <div className="comentario ">
                     <Image src={tres} alt='CabeloZen'/>  
-                    <p className="nome">What is Lorem Ipsum?</p>     
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>     
+                    <p className="nome">Débora</p>     
+                    <p>
+                    Fazer o tratamento no Cabelo Zen foi a minha melhor escolha! O resultado foi visível e todo processo foi maravilhoso! Em pouco tempo já notei diferença. A Jaci é uma profissional incrível que vai muito além do cuidado somente dos fios. Mudou minha vida de verdade.                        </p>     
    
                 </div>
                 <div className="comentario ">
                     <Image src={quatro} alt='CabeloZen'/>  
-                    <p className="nome">What is Lorem Ipsum?</p>     
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>     
+                    <p className="nome">Terezinha</p>     
+                    <p>
+                    Conheci o espaço zen por indicação de uma amiga , fechei um pacote de 10 sessões, meu cabelo caia muito e eu já havia buscado diversos tratamentos sem resultados ,  já na terceira sessão com Jaci a queda foi interrompida e através  dos estímulos provocados pelos laseres o cabelo voltou a nascer e crescer muito rápido , além de incluir uma maravilhosa aula de yoga a cada sessão  , fiquei encantada com o resultado e super indico , excelente profissional                        </p>     
    
                 </div>
             </Slider>

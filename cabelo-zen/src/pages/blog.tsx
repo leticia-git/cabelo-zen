@@ -1,86 +1,86 @@
-import Link from "next/link";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import Comentarios from "../Components/Comentarios";
-import Image from "next/image";
-import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
+// import Link from "next/link";
+// import Header from "../Components/Header";
+// import Footer from "../Components/Footer";
+// import Comentarios from "../Components/Comentarios";
+// import Image from "next/image";
+// import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 
-type Blog = {
+// type Blog = {
 
-};
-export default function Blog( {posts}: { posts: any,post:any } ){
-  return (
+// };
+// export default function Blog( {posts}: { posts: any,post:any } ){
+//   return (
     
-    <div >
-    <Header/>
-    <div className="dg-grid-blog">
-    {
+//     <div >
+//     <Header/>
+//     <div className="dg-grid-blog">
+//     {
       
-      posts.nodes.map((post: { slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }) => {
+//       posts.nodes.map((post: { slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }) => {
        
-        return(
+//         return(
           
    
-          <div className="blog">
-          <div key={post.slug} className="posts">
-            <div>
-              <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-             <div className="">{post.excerpt}</div>
-                <div className="botao-blog">
-                <Link href={`/posts/${post.slug}`}>Ler post</Link>
-                </div>
-            </div>
-            <div>
-                <img
-              className="w-full"
-              src={post.featuredImage?.node.sourceUrl}
-              />
-            </div>
-          </div>
-          <div className="sidebar">
+//           <div className="blog">
+//           <div key={post.slug} className="posts">
+//             <div>
+//               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+//              <div className="">{post.excerpt}</div>
+//                 <div className="botao-blog">
+//                 <Link href={`/posts/${post.slug}`}>Ler post</Link>
+//                 </div>
+//             </div>
+//             <div>
+//                 <img
+//               className="w-full"
+//               src={post.featuredImage?.node.sourceUrl}
+//               />
+//             </div>
+//           </div>
+//           <div className="sidebar">
 
-          </div>
-          </div>
-        )
-      })
-    }
-    </div>
-    <Comentarios/>
-       <Footer/>
-  </div>
-  );
+//           </div>
+//           </div>
+//         )
+//       })
+//     }
+//     </div>
+//     <Comentarios/>
+//        <Footer/>
+//   </div>
+//   );
   
-}
+// }
 
-export async function getStaticProps(){
+// export async function getStaticProps(){
 
-    const res = await fetch('https://wordpress.cabelozen.com.br/graphql', {
+//     const res = await fetch('https://wordpress.cabelozen.com.br/graphql', {
         
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            query: `
-            query HomePageQuery {
-              posts {
-                nodes {
-                  slug
-                  title
-                    excerpt
-                }
-              }
-            }
-            `,
-        })
-    })
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({
+//             query: `
+//             query HomePageQuery {
+//               posts {
+//                 nodes {
+//                   slug
+//                   title
+//                     excerpt
+//                 }
+//               }
+//             }
+//             `,
+//         })
+//     })
   
-    const json = await res.json()
+//     const json = await res.json()
   
-    return {
-      props: {
-          posts: json.data.posts,
+//     return {
+//       props: {
+//           posts: json.data.posts,
           
-      },
-    }
+//       },
+//     }
   
-  }
+//   }
   
