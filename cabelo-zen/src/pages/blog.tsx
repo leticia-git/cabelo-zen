@@ -52,6 +52,7 @@ export default function Blog( {posts}: { posts: any,post:any } ){
   
 }
 
+
 export async function getStaticProps(){
 
     const res = await fetch('https://wordpress.cabelozen.com.br/graphql', {
