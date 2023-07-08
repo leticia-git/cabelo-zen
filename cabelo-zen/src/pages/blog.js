@@ -7,17 +7,15 @@ import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } 
 import {getLatestPosts} from '../lib/api';
 
 
-type Blog = {
-excerpt: string;
-};
-export default function Blog( {posts}: { posts: any,post:any } ){
+export default function Blog( {posts} ){
+  console.log(posts)
   return (
     
     <div >
     <Header/>
     <div className="dg-grid-blog">
     {
-      posts.nodes.map((post: { slug: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; excerpt: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }) => {
+      posts.nodes.map(post=> {
         return(
           
    
@@ -25,16 +23,10 @@ export default function Blog( {posts}: { posts: any,post:any } ){
           <div key={post.slug} className="posts">
             <div>
               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-             <div className="">{post.excerpt}</div>
+             <article dangerouslySetInnerHTML={{__html: post.excerpt}}></article>
                 <div className="botao-blog">
                 <Link href={`/posts/${post.slug}`}>Ler post</Link>
                 </div>
-            </div>
-            <div>
-                <img
-              className="w-full"
-              src={post.featuredImage?.node.sourceUrl}
-              />
             </div>
           </div>
           <div className="sidebar">
@@ -52,7 +44,6 @@ export default function Blog( {posts}: { posts: any,post:any } ){
   
 }
 
-
 export async function getStaticProps(){
 
     const res = await fetch('https://wordpress.cabelozen.com.br/graphql', {
@@ -66,7 +57,7 @@ export async function getStaticProps(){
                 nodes {
                   slug
                   title
-                  excerpt(format: RAW)
+                    excerpt
                 }
               }
             }
