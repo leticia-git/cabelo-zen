@@ -13,11 +13,11 @@ function Footer() {
                     <p>Entre em contato pelas nossas redes:</p>
                     <div className="insta">
                         <Image src={insta} alt='CabeloZen' />
-                        <a href="">@cabelo_zen</a>
+                        <a href="https://www.instagram.com/cabelo_zen/" target="_blank" >@cabelo_zen</a>
                     </div>
                     <div className="wpp">
                         <Image src={wpp} alt='CabeloZen' />
-                        <a href="">11 98387-0091</a>
+                        <a href="https://wa.me/5511983870091?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+terapia+capilar%21" target="_blank">11 98387-0091</a>
                     </div>
                 </div>
                 <div className="endereco">

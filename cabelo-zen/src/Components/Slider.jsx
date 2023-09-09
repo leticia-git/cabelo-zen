@@ -60,7 +60,7 @@ const Responsive = () => {
                         <h3>Terapia Capilar</h3>
                         <p>Um novo método de terapia capilar desenvolvida pela tricologista e professora de Yoga Jaci! Healing Artist </p>
                         <div className="botao-carrossel">
-                            <a href="">QUERO SABER MAIS</a>
+                            <a href="#servicos">QUERO SABER MAIS</a>
                         </div>
                     </div>
                     <Image src={carrosselum} alt='CabeloZen'/>                     
@@ -70,7 +70,7 @@ const Responsive = () => {
                         <h3>Aromaterapia</h3>
                         <p>Um tratamento perfeito, natural e tem afinidade com o couro cabeludo e fios e também trata a parte emocional</p>
                         <div className="botao-carrossel">
-                            <a href="">QUERO SABER MAIS</a>
+                            <a href="#servicos">QUERO SABER MAIS</a>
                         </div>
                     </div>
                     <Image src={carrosseldois} alt='CabeloZen'/>           
@@ -80,7 +80,7 @@ const Responsive = () => {
                         <h3>Massagem Epicrânia!</h3>
                         <p>Que tal experimentar essa técnica relaxante e ao mesmo tempo estimulante? Agende uma consulta com nossa Tricologista e conheça o nosso espaço CabeloZen!</p>
                         <div className="botao-carrossel">
-                            <a href="">AGENDE SUA AVALIAÇÃO</a>
+                            <a href="https://wa.me/5511983870091?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+terapia+capilar%21">AGENDE SUA AVALIAÇÃO</a>
                         </div>
                     </div>
                     <Image src={carrosseltres} alt='CabeloZen'/>           
