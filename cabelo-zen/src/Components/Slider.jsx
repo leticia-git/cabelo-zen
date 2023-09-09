@@ -60,7 +60,7 @@ const Responsive = () => {
                         <h3>Terapia Capilar</h3>
                         <p>Um novo método de terapia capilar desenvolvida pela tricologista e professora de Yoga Jaci! Healing Artist </p>
                         <div className="botao-carrossel">
-                            <a href="#servicos">QUERO SABER MAIS</a>
+                            <a href="servicos">QUERO SABER MAIS</a>
                         </div>
                     </div>
                     <Image src={carrosselum} alt='CabeloZen'/>                     
@@ -70,7 +70,7 @@ const Responsive = () => {
                         <h3>Aromaterapia</h3>
                         <p>Um tratamento perfeito, natural e tem afinidade com o couro cabeludo e fios e também trata a parte emocional</p>
                         <div className="botao-carrossel">
-                            <a href="#servicos">QUERO SABER MAIS</a>
+                            <a href="servicos">QUERO SABER MAIS</a>
                         </div>
                     </div>
                     <Image src={carrosseldois} alt='CabeloZen'/>           
