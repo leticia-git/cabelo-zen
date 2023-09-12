@@ -4,7 +4,7 @@ import Head from "next/head";
 import React from 'react'
 import wpp from '../img/wpp.png'
 import insta from '../img/insta.png'
-
+import whats from '../img/whats.png'
 function Footer() {
     return (
         <div className="footer">
@@ -27,6 +27,9 @@ function Footer() {
             </div>
             <div className="rodape">
                 <p>Copyright © 2023 TODOS OS DIREITOS RESERVADOS. © 2023 cabelozen</p>
+            </div>
+            <div className="whats-flut">
+                <a href="https://wa.me/5511983870091?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+terapia+capilar%21" target="_blank"><Image src={whats} alt='CabeloZen'/></a>
             </div>
         </div>
     )
